@@ -22,7 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.daiatech.audio.utils.marker.AudioMarkerUi
-import com.thedroiddiv.audio.utils.ui.theme.AudioUtilsTheme
+import com.thedroiddiv.audio.utils.theme.AudioUtilsTheme
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import java.io.File

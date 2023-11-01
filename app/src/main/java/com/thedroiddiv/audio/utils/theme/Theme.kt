@@ -1,4 +1,4 @@
-package com.thedroiddiv.audio.utils.ui.theme
+package com.thedroiddiv.audio.utils.theme
 
 import android.app.Activity
 import android.os.Build

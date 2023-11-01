@@ -1,4 +1,4 @@
-package com.thedroiddiv.audio.utils.ui.theme
+package com.thedroiddiv.audio.utils.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
