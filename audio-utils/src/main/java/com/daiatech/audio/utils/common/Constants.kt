@@ -14,6 +14,8 @@ internal val maxSpikeRadiusDp: Dp = 12.dp
 
 internal val removeCircleRadius: Dp = 8.dp
 
+internal val touchTargetSize = 12.dp
+
 internal val MIN_GRAPH_HEIGHT: Dp = 48.dp
 
 internal const val MIN_PROGRESS: Float = 0F

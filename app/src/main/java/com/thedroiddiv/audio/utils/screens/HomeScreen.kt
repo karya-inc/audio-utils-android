@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -46,6 +47,11 @@ fun HomeScreen(
                 audioFilePath = file.path
             }
         }
+
+    LaunchedEffect(Unit) {
+        val file = File(context.filesDir, "temp.wav")
+        if (file.exists()) audioFilePath = file.path
+    }
 
     Column(
         Modifier.fillMaxSize(),

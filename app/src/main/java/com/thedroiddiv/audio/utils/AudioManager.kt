@@ -4,6 +4,8 @@ import android.content.Context
 import android.util.Log
 import linc.com.amplituda.Amplituda
 import linc.com.amplituda.AmplitudaResult
+import linc.com.amplituda.Cache
+import linc.com.amplituda.Compress
 
 object AudioManager {
     private lateinit var amplituda: Amplituda

@@ -23,6 +23,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.thedroiddiv.audio.utils.screens.HomeScreen
 import com.thedroiddiv.audio.utils.screens.Marker
+import com.thedroiddiv.audio.utils.screens.SegmentationScreen
 import java.io.File
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -52,7 +53,7 @@ fun App() {
                 .fillMaxSize()
                 .padding(contentPadding),
 
-        ) {
+            ) {
             NavHost(navController = navController, startDestination = "home_screen") {
                 composable("home_screen") {
                     HomeScreen(
@@ -72,7 +73,8 @@ fun App() {
                 }
 
                 composable("audio_segmentation_screen") {
-
+                    val file = File(context.filesDir, "temp.wav")
+                    SegmentationScreen(audioFilePath = file.path)
                 }
             }
         }
